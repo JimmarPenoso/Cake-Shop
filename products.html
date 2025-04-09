@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes for Sale</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            color: #0C243C
+        }
+
+        #container {
+            width: 1200px;
+            height: 830px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #E94D40;
+            padding-left: 114px;
+            padding-right: 114px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        nav {
+            width: 1200px;
+            height: 40px;
+            background-color: #ffffff;
+            font-size: 16px;
+            text-align: right;
+        }
+
+        nav a {
+            display: inline-block;
+            /* Ensures links respect text alignment */
+            margin-left: 30px;
+            padding-top: 20px;
+        }
+
+        header {
+            width: 1200px;
+            height: 360px;
+            background-color: #ffffff;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+        }
+
+        .products {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 114px;
+            margin-right: 114px;
+        }
+
+        footer {
+            width: 1200px;
+            height: 50px;
+            background-color: #0C243C;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 18px;
+            padding-top: 20px;
+        }
+
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: 212px;
+            margin-right: 212px;
+            padding-right: 150px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        th {
+            color: #ffffff;
+            text-align: left;
+            border: 1px solid white;
+            border-collapse: collapse;
+            margin-left: 212px;
+            margin-right: 212px;
+            padding-right: 150px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        tr:nth-child(1) {
+            background-color: #0C243C;
+            color: #ffffff;
+        }
+
+        tr:nth-child(3) {
+            background-color: #b1d4f6;
+        }
+
+        p,
+        .order {
+            padding-left: 114px;
+            padding-right: 114px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </Style>
+</head>
+
+<body>
+    <div id="container">
+
+        <a href="index.html"><img class="logo" src="logo.png"
+            alt="cake shop logo. links to home page"></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Our Cakes</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <header><img src="Tiered_choc_berry_cake_editted_1200x360_tiny.png"
+                alt="Top layer of layered chocolate cake with strawberries and blueberries">
+        </header>
+        <h1>
+            Cakes for Sale
+        </h1><br>
+        <div class="products">
+            <img src="macaron_tower_edited.png"
+                alt="A brown macaron stacked on top a yellow macaron">
+            <img src="brownie300.jpg" alt="A brownie with chocolate drizzle">
+            <img src="decoratedCake300.jpg"
+                alt="A cake decorated with edible flowers">
+            <img src="lemonCake300.jpg"
+                alt="A cake decorated with lemons and raspberries">
+            <img src="cupcake300.jpg" alt="Three cupcakes arranged beside a flower">
+            <img src="cheeseCake300.jpg"
+                alt="A cheesecake decorated with various fruits and chocolates">
+
+        </div><br><br>
+        <table class="prices">
+            <tr>
+                <th>Cake Size</th>
+                <th>Suitable for</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td>8-10 people</td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td>10-12 people</td>
+                <td>$60.00</td>
+            </tr>
+            <tr>
+                <td>Large</td>
+                <td>16-20 people</td>
+                <td>$100.00</td>
+            </tr>
+        </table><br>
+        <h2>How to Order</h2><br>
+        <p>If you're interested in ordering a cake for your special occasion, let us know!</p><br>
+        <form class="order" action="/order.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder=""><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder=""><br><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder=""><br><br>
+            <label for="type">Type of cake required:</label>
+            <textarea name="type" id="type"></textarea><br><br>
+            <label for="date">Date required:</label>
+            <input type="date" name="date" id="date"><br><br>
+            <button type="button">Send</button>
+        </form><br>
+
+        <footer>
+            &copy; 2025 Jimmar Penoso
+        </footer>
+    </div>
+</body>
+
+</html>

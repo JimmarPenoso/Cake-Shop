@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            color: #0C243C
+        }
+
+        #container {
+            width: 1200px;
+            height: 830px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #E94D40
+        }
+
+        nav {
+            width: 1200px;
+            height: 40px;
+            background-color: #ffffff;
+            font-size: 16px;
+            text-align: right;
+        }
+
+        nav a {
+            display: inline-block;
+            /* Ensures links respect text alignment */
+            margin-left: 30px;
+            padding-top: 20px;
+        }
+
+        header {
+            width: 1200px;
+            height: 360px;
+            background-color: #ffffff;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+        }
+
+        footer {
+            width: 1200px;
+            height: 50px;
+            background-color: #0C243C;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 18px;
+            padding-top: 20px;
+        }
+
+        .message {
+            padding-left: 114px;
+            padding-right: 114px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <a href="index.html"><img class="logo" src="logo.png"
+            alt="cake shop logo. links to home page"></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Our Cakes</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <header>
+            <img src="Tiered_choc_berry_cake_editted_1200x360_tiny.png"
+                alt="Top layer of layered chocolate cake with strawberries and blueberries">
+        </header>
+        <section>
+            <div class="message">
+                <h1>Get in touch with us</h1><br>
+                <form action="/message.php">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder=""><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder=""><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" placeholder=""><br><br>
+                    <label for="feedback">Feedback:</label>
+                    <textarea name="feedback" id= "feedback" cols="22" rows="3"></textarea>
+                    <br><br>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section><br>
+
+        <footer>
+            &copy; 2025 Jimmar Penoso
+        </footer>
+    </div>
+</body>
+
+</html>
